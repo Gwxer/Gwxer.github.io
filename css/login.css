@@ -1,0 +1,174 @@
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+}
+
+.bg-purple{
+    background-image: url('../img/bj.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: left top;
+    height: 100%;
+    overflow: hidden;
+}
+
+.objects img{
+    z-index: 90;
+    pointer-events: none;
+}
+
+.object_rocket{
+    z-index: 95;
+    position: absolute;
+    transform: translateX(-50px);
+    top: 75%;
+    pointer-events: none;
+    animation: rocket-movement 200s linear infinite both running;
+}
+
+.object_earth{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    z-index: 90;
+/*    animation: spin-earth 100s infinite linear both;*/
+}
+
+.object_moon{
+    position: absolute;
+    top: 12%;
+    left: 25%;
+}
+
+.object_astronaut{
+    animation: rotate-astronaut 200s infinite linear both alternate;
+}
+
+.box_astronaut{
+    z-index: 110 !important;
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    will-change: transform;
+    animation: move-astronaut 50s infinite linear both alternate;
+}
+
+.stars{
+    background: url(https://i.loli.net/2021/09/30/9kEbfo53wXTsPjz.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: left top;
+}
+
+.glowing_stars .star{
+    position: absolute;
+    border-radius: 100%;
+    background-color: #fff;
+    width: 3px;
+    height: 3px;
+    opacity: 0.3;
+    will-change: opacity;
+}
+
+.glowing_stars .star:nth-child(1){
+    top: 80%;
+    left: 25%;
+    animation: glow-star 2s infinite ease-in-out alternate 1s;
+}
+.glowing_stars .star:nth-child(2){
+    top: 20%;
+    left: 40%;
+    animation: glow-star 2s infinite ease-in-out alternate 3s;
+}
+.glowing_stars .star:nth-child(3){
+    top: 25%;
+    left: 25%;
+    animation: glow-star 2s infinite ease-in-out alternate 5s;
+}
+.glowing_stars .star:nth-child(4){
+    top: 75%;
+    left: 80%;
+    animation: glow-star 2s infinite ease-in-out alternate 7s;
+}
+.glowing_stars .star:nth-child(5){
+    top: 90%;
+    left: 50%;
+    animation: glow-star 2s infinite ease-in-out alternate 9s;
+}
+
+.ih-item.circle.effect {
+  margin: 0 auto;
+  -webkit-perspective: 900px;
+  -moz-perspective: 900px;
+  perspective: 900px;
+}
+
+.ih-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.ih-item.circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.ih-item.circle .img img {
+  border-radius: 50%;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  font-weight: lighter;
+  color: #DFD2C0;
+  font-size: 2.5em;
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+}
+
+.panel-main {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.panel-main__inner {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  z-index: 800;
+  padding: 0 60px;
+}
+
+.panel-inverted {
+  font-weight: 100;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+  display: inline-block;
+  margin: 5px 1px 0 0;
+  line-height: 1em;
+}
+
+.btn a {
+  position: relative;
+  border-color: #fff;
+  color: #fff;
+  opacity: 0.8;
+  padding: 10px 20px;
+  border: 1px solid #4e97d8;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: none;
+  color: #4e97d8;
+}

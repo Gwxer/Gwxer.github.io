@@ -1,0 +1,53 @@
+<%@ page language="java" import="java.util.*" pageEncoding="gb2312"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>欢迎界面</title>
+		<link rel="stylesheet" href="css/login.css">
+	</head>
+
+	<body class="bg-purple">
+
+		<div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+				<div class="ih-item circle effect">
+					<div class="img"><img src="./img/profile.png" alt="img"></div>
+                </div>
+
+                <h1>Gwxer</h1>
+					
+                <p>念念不忘，必有回响。<br/>
+                    <strong>-「李叔同」</strong>
+                </p><br/><br/>
+                
+                <div>
+                    <nav class = "btn">
+                    	<a href="MyHomePage.jsp">进入主页</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        <div class="objects">
+			<img class="object_rocket" src="./img/rocket.svg" width="40px">
+			<div class="earth-moon">
+				<img class="object_earth" src="./img/earth.svg" width="100px">
+				<img class="object_moon" src="./img/moon.svg" width="80px">
+			</div>
+			<div class="box_astronaut">
+				<img class="object_astronaut" src="./img/astronaut.svg" width="140px">
+			</div>
+		</div>
+		<div class="glowing_stars">
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+		</div>
+	</body>
+
+</html>
+
+
+
